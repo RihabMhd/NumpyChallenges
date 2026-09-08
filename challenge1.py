@@ -10,6 +10,6 @@ print("Type:",tab1.dtype)
 
 print(tab1[0])
 print(tab1[-1])
-print(min(tab1))
-print(max(tab1))
+print(np.min(tab1))
+print(np.max(tab1))
 print(np.mean(tab1))
