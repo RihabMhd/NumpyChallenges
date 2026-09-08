@@ -6,7 +6,7 @@ seuil_max=50
 seuil_min=20
 
 mes_normal=(tableau>seuil_min) & (tableau<seuil_max)
-mes_sus=(tableau>seuil_min) | (tableau<seuil_max)
+mes_sus=(tableau<seuil_min) | (tableau>seuil_max)
 
 valeurNormal=tableau[mes_normal]
 valeurSus=tableau[mes_sus]
