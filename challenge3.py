@@ -3,12 +3,12 @@ import numpy as np
 notes=np.random.randint(5,20, size=(3, 5))
 print(notes)
 
-moyenne=np.mean(notes)
-print(moyenne)
+moyennes=np.mean(notes, axis=0)
+max_matiere=np.max(notes, axis=0)
+min_matiere=np.min(notes, axis=0)
+ecart_matiere=max_matiere - min_matiere
+print(moyennes)
+print(ecart_matiere)
 
-max_note=np.max(notes)
-min_note=np.min(notes)
-print("la meilleure et la plus faible note :", max_note , min_note)
-print(" l'écart entre elles:",max_note-min_note)
-note=notes[notes>moyenne]
-print("les étudiants ayant obtenu une note supérieure à la moyenne:",note)
+etudiants_superieurs= notes > moyennes
+print(etudiants_superieurs)

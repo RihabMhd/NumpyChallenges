@@ -8,7 +8,7 @@ jours_chauds=temperatures[temperatures>25]
 jours_froids=temperatures[temperatures<25]
 temp_sup_moyenne=temperatures[temperatures>moyenne]
 amplitude_thermique=np.max(temperatures)- np.min(temperatures)
-
+variations=np.diff(temperatures)
 print(amplitude_thermique)
 print(temperatures)
 print(moyenne)

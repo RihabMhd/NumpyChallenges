@@ -5,5 +5,6 @@ print(clients)
 
 print(clients[0])
 print(clients[:,0])
+print(clients[0:2])
 print(clients.dtype)
 print(clients.shape[0])

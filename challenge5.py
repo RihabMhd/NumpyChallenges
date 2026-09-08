@@ -10,3 +10,6 @@ clients = np.array([
 clients[1][2]=85
 clients[0]=[1, 55, 98]
 clients[:,1]=[26, 31, 24, 29]
+
+clients_copy=clients.copy()
+clients_copy[0, 0]= 999
